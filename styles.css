@@ -1,0 +1,79 @@
+/* styles.css */
+.faq-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.faq-item {
+    border: 1px solid #ddd;
+    margin: 10px 0;
+    padding: 10px;
+}
+
+.question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.toggle {
+    cursor: pointer;
+}
+
+.answer {
+    display: none;
+}
+
+/* WhatsApp button styles */
+.whatsapp-button {
+  position: fixed;
+  bottom: 20px; /* Adjust the distance from the bottom as needed */
+  right: 20px; /* Adjust the distance from the right as needed */
+  background-color: #ffffff;
+  padding: 10px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.whatsapp-button img {
+  width: 30px; /* Adjust the size of the WhatsApp icon as needed */
+  height: 30px;
+}
+
+/* Hover effect */
+.whatsapp-button:hover {
+  background-color: #128c7e; /* Darker blue color on hover */
+}
+
+
+
+  /* Custom styles */
+  .accordion-header:focus {
+    outline: none;
+  }
+  .accordion-item:not(:last-child) {
+    border-bottom: 1px solid #e5e7eb;
+  }
+  .accordion-content {
+    display: none;
+    padding: 1rem;
+  }
+  .accordion-item.open .accordion-content {
+    display: block;
+  }
+
+  /* CSS */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
